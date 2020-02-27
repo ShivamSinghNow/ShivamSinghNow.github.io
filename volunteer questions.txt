@@ -1,0 +1,8 @@
+1. first name last name 
+2. age 
+3. school/ university
+4. experiance and what languages 
+5. How many hackathons have you attended 
+6. Tshirt Size 
+7. How long can you stay 
+8. Why do you want to mentor 
