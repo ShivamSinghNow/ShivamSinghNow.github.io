@@ -327,7 +327,7 @@ body {
 }
 
 #about {
-    overflow-x: hidden;
+    overflow: hidden;
     height: 350vh;
 }
 
@@ -473,7 +473,7 @@ body {
 
 #about_hackathon {
     z-index: 200;
-    height: 190vh;
+    height: 195vh;
     background-color: white;
     overflow: hidden;
 }
@@ -507,11 +507,11 @@ body {
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    margin-left: 15px;
 }
 
 .whatisit {
     text-align: center;
+    margin: 0 auto;
 }
 
 #countContainer {
@@ -552,7 +552,7 @@ body {
 }
 
 #faq {
-    height: 100vh;
+    height: 105vh;
     background-color: white;
     overflow: hidden;
 }
@@ -592,6 +592,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: black;
+    overflow: hidden;
 }
 
 .logos {
@@ -605,28 +606,185 @@ body {
     margin: 0 auto;
 }
 
-.sponsorTable {
-    width: 100%;
-    margin-top: 50px;
+.logodiv {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
 }
 
-.jetbrain {
+.jet {
     height: 200px;
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: 1.0s;
 }
 
 .make {
-    height: 100px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: 1.0s;
 }
 
-.tableDef {
-    margin: 0 auto;
-    text-align: center;
-    width: 33.33%;
+.jet:hover {
+    transform: scale(1.1);
+    background-color: #b19cd9;
+    border-radius: 12px;
 }
 
-.tableDef2 {
-    margin: 0 auto;
-    text-align: center;
-    width: 33.33%;
-    padding-top: 100px;
+.make:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+    background-color: #b19cd9;
+}
+
+
+/*----------------MEDIA QUERIES-----------------*/
+
+
+/*iphone x and iphone 11 pro max and iPhone Xs */
+
+@media only screen and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .bruh {
+        top: 80%;
+        left: 20%;
+        transform: translate(-20%, -80%);
+    }
+    .bruh2 {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+    .bruh3 {
+        top: 80%;
+        left: 80%;
+        transform: translate(-80%, -80%);
+    }
+    .where {
+        position: absolute;
+        left: 70%;
+        top: 60%;
+        transform: translate(-70%, -60%);
+    }
+    #about_hackathon {
+        height: 80vh;
+    }
+    .td1 {
+        padding-left: 1px;
+    }
+    .td2 {
+        padding-left: 1px;
+    }
+    #about {
+        height: 140vh;
+    }
+    #faq {
+        height: 50vh;
+    }
+    #sponsors {
+        height: 50vh;
+    }
+    body {
+        height: 420vh;
+    }
+    .what {
+        font-size: 50px;
+    }
+}
+
+
+/*iphone 11 and iphone xr*/
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .bruh {
+        top: 80%;
+        left: 20%;
+        transform: translate(-20%, -80%);
+    }
+    .bruh2 {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+    .bruh3 {
+        top: 80%;
+        left: 80%;
+        transform: translate(-80%, -80%);
+    }
+    .where {
+        position: absolute;
+        left: 70%;
+        top: 60%;
+        transform: translate(-70%, -60%);
+    }
+    #about_hackathon {
+        height: 80vh;
+    }
+    .td1 {
+        padding-left: 1px;
+    }
+    .td2 {
+        padding-left: 1px;
+    }
+    #about {
+        height: 140vh;
+    }
+    #faq {
+        height: 50vh;
+    }
+    #sponsors {
+        height: 50vh;
+    }
+    body {
+        height: 420vh;
+    }
+}
+
+
+/*all iphone 6 - 8*/
+
+@media only screen and (device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .bruh {
+        top: 80%;
+        left: 20%;
+        transform: translate(-20%, -80%);
+    }
+    .bruh2 {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+    .bruh3 {
+        top: 80%;
+        left: 80%;
+        transform: translate(-80%, -80%);
+    }
+    .where {
+        position: absolute;
+        left: 70%;
+        top: 60%;
+        transform: translate(-70%, -60%);
+    }
+    #about_hackathon {
+        height: 100vh;
+    }
+    .td1 {
+        padding-left: 1px;
+    }
+    .td2 {
+        padding-left: 1px;
+    }
+    #about {
+        height: 170vh;
+    }
+    #faq {
+        height: 65vh;
+    }
+    #sponsors {
+        height: 70vh;
+    }
+    body {
+        height: 420vh;
+    }
 }
